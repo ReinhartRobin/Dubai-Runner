@@ -11,9 +11,20 @@
 
 ## Items
 ##### Es gibt viele und verschiedene items:
-| Items        |       ability           |
+| Items        |       abilities           |
 | ------------- |:----------------:|
-| Vaper fly 5%    | 5% faster    |
-| La Ferari      | immortality         |
-| rolex ice    |  destroys harming blocks in your direct enviroment    |
+| Vaper fly 5%    | 15% faster    |
+| La Ferrari      | immortality         |
+| Rolex ice    |  destroys harming blocks in your direct enviroment    |
+| Sunglasses               |   Reduces damage by 50%                  |
+|  Safe                    | 	 increases your  Bank maximum |
 | More items are coming soon           | So stay up to date |
+
+---
+## This is the new sketch V2
+
+![alt text][logo2]
+
+[logo2]: https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/skizze2.jpg "sketch v2"
+
+##### The Player is running to the right and has to collect coins and avoid harming Items. The coins are spawning random in the sky and fall down. The bad items are falling from the sky and you should not run to the right, because that lowers your score.
