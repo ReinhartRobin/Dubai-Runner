@@ -10,7 +10,7 @@
 [logo]: https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/skizze1.jpg "very minimal sketch"
 
 ## Items
-##### Es gibt viele und verschiedene items:
+##### There are some items:
 | Items        |       abilities           |
 | ------------- |:----------------:|
 | Vaper fly 5%    | 15% faster    |
@@ -28,3 +28,11 @@
 [logo2]: https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/skizze2.jpg "sketch v2"
 
 ##### The Player is running to the right and has to collect coins and avoid harming Items. The coins are spawning random in the sky and fall down. The bad items are falling from the sky and you should not run to the right, because that lowers your score.
+
+
+### The main reason why we are developing the game is, that you can beat your own Highscores and battle against your friends.
+
+| Date        |       time           | Subject               |   Period of Time         |
+| ------------- |:----------------:|:-----------------------:|:-------------------:|
+| 28.04.2020   |  15:50 - 17:30   | Planing and finding theme|   1h 40min
+| 29.04.2020 |    13:50 -   15:30| Graphic design, background and running | 1h 40min|
