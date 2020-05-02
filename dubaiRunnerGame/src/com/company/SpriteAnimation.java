@@ -4,12 +4,15 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class SpriteAnimation {
-    Timer sprite, jumpTime;
+    Timer sprite, jumpTime, slideTime;
     private int temp1 = 1;
     private boolean temp2 = false;
-    public SpriteAnimation(){
+
+    public SpriteAnimation() {
         sprite = new Timer();
         jumpTime = new Timer();
+        slideTime = new Timer();
+        //Sprite-Bild-ändern
         sprite.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
@@ -43,18 +46,18 @@ public class SpriteAnimation {
         }, 0, 100);
 
 
-            jumpTime.scheduleAtFixedRate(new TimerTask() {
-                @Override
-                public void run() {
+        //Sprung-Bild-ändern
+        jumpTime.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                if (Var.jumpcnt < 0 && Var.py < Var.ground) {
+                    Var.jumpPictures = 0;
 
-                        if (Var.jumpcnt < 0 && Var.py < Var.ground){
-                        Var.jumpPictures = 0;
-
-                    }else if (Var.jumpcnt >= 0){
-                        Var.jumpPictures = 1;
-                    }
+                } else if (Var.jumpcnt >= 0) {
+                    Var.jumpPictures = 1;
                 }
-            }, 0, 10);
+            }
+        }, 0, 10);
 
 
     }

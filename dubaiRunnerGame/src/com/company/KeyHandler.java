@@ -13,17 +13,18 @@ public class KeyHandler implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-        if (e.getKeyCode()== KeyEvent.VK_W){
+        if (e.getKeyCode() == KeyEvent.VK_W) {
             Var.jump = true;
         }
 
-        if (e.getKeyCode()== KeyEvent.VK_A){
+        if (e.getKeyCode() == KeyEvent.VK_A) {
             Var.left = true;
-        }else if (e.getKeyCode()== KeyEvent.VK_D){
+        } else if (e.getKeyCode() == KeyEvent.VK_D) {
             Var.right = true;
         }
-        if (e.getKeyCode()== KeyEvent.VK_S){
+        if (e.getKeyCode() == KeyEvent.VK_S) {
             Var.down = true;
+
         }
 
 
@@ -32,16 +33,16 @@ public class KeyHandler implements KeyListener {
     @Override
     public void keyReleased(KeyEvent e) {
 
-        if (e.getKeyCode()== KeyEvent.VK_W){
+        if (e.getKeyCode() == KeyEvent.VK_W) {
             Var.jump = true;
         }
-        if (e.getKeyCode()== KeyEvent.VK_A){
+        if (e.getKeyCode() == KeyEvent.VK_A) {
             Var.left = false;
-        }else if (e.getKeyCode()== KeyEvent.VK_D){
+        } else if (e.getKeyCode() == KeyEvent.VK_D) {
             Var.right = false;
         }
-        if (e.getKeyCode()== KeyEvent.VK_S){
-            Var.down = false;
+        if (e.getKeyCode() == KeyEvent.VK_S) {
+            Var.down = true;
         }
 
     }

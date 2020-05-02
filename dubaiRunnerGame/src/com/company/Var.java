@@ -8,23 +8,39 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class Var{
+public class Var {
+
+    //Screen
     static JFrame jf1;
     static int screenWidth = 1600, screenHeight = 900;
-    static int backgroundX1 = 0, backgroundX2 = 1600, backgroundX3=-1600, backgroundSpeed = 8;
+    static int backgroundX1 = 0, backgroundX2 = 1600, backgroundX3 = -1600, backgroundSpeed = 8;
+
+    //Player
     static int px = 500, py = 640;
     static int ground = 640;
     static int speed = 3;
-    static boolean jump = false, down=false, left=false, right=false;
+    static boolean jump = false, down = false, left = false, right = false;
     static int spritePictures = 1;
     static int jumpPictures = 0;
-    static int maxHeight = 440;
-    static double jumpcnt = -28.284;
+    static double jumpcnt = -28.284, slidecnt = 5;
     static boolean check = true;
+    static int maxHeight = 440;
+
+    //Gegner
+    static int gegnerX[] = new int[6], gegnerY[] = new int[6];
+    static int gegnerSpeed[] = new int[6];
+
+    //Coins
+    static int coinsX[] = new int[5], coinsY[] = new int[5];
+    static int coinSpeed[] = new int[5];
+
+
+    //Score
     static int score = 0;
     static String scoreText = "SCORE: ";
 
-
+    //Images
+    static BufferedImage ib1, ib2, ib3, prinz, igegner1;
     static String[] imageArray = {
             "rsc/sprite/stand.png",
             "rsc/sprite/1.png",
@@ -59,25 +75,49 @@ public class Var{
     };
 
 
-    static Font scoreFont = new Font("Agency FB", Font.BOLD,40);
+    //Score
+    static Font scoreFont = new Font("Agency FB", Font.BOLD, 40);
+
+
+    //Label
     static Label lbl1;
     static LabelSprite lblMarcus;
-    static BufferedImage ib1, ib2, ib3, prinz;
+    static LabelEnemy lblEnemy;
 
-    public Var(){
+
+    //Methode
+    public Var() {
 
         try {
+            //Background
             ib1 = ImageIO.read(new File("rsc/b1.jpg"));
             ib2 = ImageIO.read(new File("rsc/b1.jpg"));
             ib3 = ImageIO.read(new File("rsc/b1.jpg"));
+            //Player
             prinz = ImageIO.read(new File("rsc/sprite/stand.png"));
-        }catch (IOException e){
+            //Gegner
+            igegner1 = ImageIO.read(new File("rsc/gegner1.png"));
+        } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Bilder konnten nicht geladen werden.");
         }
+        //Gegner
+        gegnerSpeed[0] = 3;
+        gegnerSpeed[1] = 4;
+        gegnerSpeed[2] = 3;
+        gegnerSpeed[3] = 3;
+        gegnerSpeed[4] = 4;
+        gegnerSpeed[5] = 3;
+
+        //Coins
+        coinSpeed[0] = 3;
+        coinSpeed[1] = 4;
+        coinSpeed[2] = 3;
+        coinSpeed[3] = 3;
+        coinSpeed[4] = 4;
+        coinSpeed[5] = 3;
+
     }
-
-
 
 
 }
