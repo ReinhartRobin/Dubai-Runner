@@ -32,7 +32,60 @@
 
 ### The main reason why we are developing the game is, that you can beat your own Highscores and battle against your friends.
 
+***
+
+
+#### Item: VaperFly 5%
+#### Description: It gives you a speed boost
+![alt text][item1]
+
+[item1]: https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/dubaiRunnerGame/rsc/items/speedBoost.png "VaperFly 5%"
+***
+#### Item: Rolex Ice
+#### Description: It dazzles your enemies and kill them
+![alt text][item2]
+
+[item2]: https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/dubaiRunnerGame/rsc/items/clearEnemies.png "Rolex Ice"
+***
+
+#### Item: Safe
+#### Description: It increases your money you can store
+![alt text][item3]
+
+[item3]: https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/dubaiRunnerGame/rsc/items/doubleMoney.png "Ssafe"
+***
+
+#### Item: Coin
+#### Description: It adds x$ to your bank account
+![alt text][item4]
+
+[item4]:https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/dubaiRunnerGame/rsc/coin.png "Coin"
+***
+
+
+#### Enemy: Taxes
+#### Description: It steals 100$ from your bank account
+![alt text][item5]
+
+[item5]:https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/dubaiRunnerGame/rsc/gegner1.png "Taxes"
+***
+
+
+#### Enemy: Bigger Taxes
+#### Description: It steals 1000$ from your bank account
+![alt text][item6]
+
+[item6]:https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/dubaiRunnerGame/rsc/gegner2.png "Big Taxes"
+***
+
+
+
 | Date        |       time           | Subject               |   Period of Time         |
 | ------------- |:----------------:|:-----------------------:|:-------------------:|
 | 28.04.2020   |  15:50 - 17:30   | Planing and finding theme|   1h 40min
 | 29.04.2020 |    13:50 -   15:30| Graphic design, background and running | 1h 40min|
+| 29.04.2020 |    18:00 -   21:30| running animation anf fixing background animation| 3h 30min|
+| 30.04.2020 |    20:00 - 00:00 |jumping animation| 4h|
+| 01.05.2020 |    9:00 -  13:40|Fixing jumping animation and creating slide animation|4h 40min    |
+| 01.05.2020 |    20:00 - 00:00 |slide fixing and optimize code and adding enemies |4h|
+| 02.05.2020 |    10:15 - 12:45 |fixing enemies and adding coins | 2h 30min|

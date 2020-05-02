@@ -31,6 +31,12 @@ public class Gui {
         Var.lblEnemy.setVisible(true);
         Var.jf1.add(Var.lblEnemy);
 
+        //Coins
+        Var.lblCoin = new LabelCoin();
+        Var.lblCoin.setBounds(0, 0, Var.screenWidth, Var.screenHeight);
+        Var.lblCoin.setVisible(true);
+        Var.jf1.add(Var.lblCoin);
+
         //Background
         Var.lbl1 = new Label();
         Var.lbl1.setBounds(0, 0, Var.screenWidth, Var.screenHeight);

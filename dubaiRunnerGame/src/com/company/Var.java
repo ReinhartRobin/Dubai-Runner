@@ -40,7 +40,7 @@ public class Var {
     static String scoreText = "SCORE: ";
 
     //Images
-    static BufferedImage ib1, ib2, ib3, prinz, igegner1;
+    static BufferedImage ib1, ib2, ib3, prinz, igegner1, igegner2, iCoin;
     static String[] imageArray = {
             "rsc/sprite/stand.png",
             "rsc/sprite/1.png",
@@ -83,6 +83,7 @@ public class Var {
     static Label lbl1;
     static LabelSprite lblMarcus;
     static LabelEnemy lblEnemy;
+    static LabelCoin lblCoin;
 
 
     //Methode
@@ -97,6 +98,9 @@ public class Var {
             prinz = ImageIO.read(new File("rsc/sprite/stand.png"));
             //Gegner
             igegner1 = ImageIO.read(new File("rsc/gegner1.png"));
+            igegner2 = ImageIO.read(new File("rsc/gegner2.png"));
+            //Coins
+            iCoin = ImageIO.read(new File("rsc/coin.png"));
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Bilder konnten nicht geladen werden.");
@@ -115,7 +119,6 @@ public class Var {
         coinSpeed[2] = 3;
         coinSpeed[3] = 3;
         coinSpeed[4] = 4;
-        coinSpeed[5] = 3;
 
     }
 

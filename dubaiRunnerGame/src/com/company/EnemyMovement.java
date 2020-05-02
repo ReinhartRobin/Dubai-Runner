@@ -26,8 +26,8 @@ public class EnemyMovement {
         Var.gegnerY[3] = (int) (Math.random() * ((750) - 600) + 600);
         Var.gegnerX[4] = -75 - (int) (Math.random() * (100 - 1) + 1);
         Var.gegnerY[4] = (int) (Math.random() * ((599) - 300) + 300);
-        Var.gegnerX[5] = -75 - (int) (Math.random() * (100 - 1) + 1);
-        Var.gegnerY[5] = (int) (Math.random() * ((299) - 0) + 0);
+        Var.gegnerX[5] = -4000 - (int) (Math.random() * (100 - 1) + 1);
+        Var.gegnerY[5] = (int) (Math.random() * ((Var.ground) - 0) + 0);
 
 
 
@@ -107,8 +107,8 @@ public class EnemyMovement {
                             Var.gegnerX[i] = -75 - (int) (Math.random() * (100 - 1) + 1);
                             Var.gegnerY[i] = (int) (Math.random() * ((599) - 300) + 300);
                         }else{
-                            Var.gegnerX[i] = -75 - (int) (Math.random() * (100 - 1) + 1);
-                            Var.gegnerY[i] = (int) (Math.random() * ((299) - 0) + 0);
+                            Var.gegnerX[i] = -4000 - (int) (Math.random() * (100 - 1) + 1);
+                            Var.gegnerY[i] = (int) (Math.random() * ((Var.ground) - 0) + 0);
                         }
                     }
                 }
