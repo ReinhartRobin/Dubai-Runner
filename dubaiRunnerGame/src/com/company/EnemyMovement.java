@@ -79,6 +79,7 @@ public class EnemyMovement {
 
 
                 for (int i = 0; i < 3; i++) {
+                    Var.blick = true;
                     Var.gegnerX[i] -= Var.gegnerSpeed[i];
                     if (Var.gegnerX[i] < 0) {
 

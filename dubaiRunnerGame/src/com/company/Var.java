@@ -29,6 +29,7 @@ public class Var {
     //Gegner
     static int gegnerX[] = new int[6], gegnerY[] = new int[6];
     static int gegnerSpeed[] = new int[6];
+    static boolean blick = true;
 
     //Coins
     static int coinsX[] = new int[5], coinsY[] = new int[5];
@@ -38,6 +39,14 @@ public class Var {
     //Score
     static int score = 0;
     static String scoreText = "SCORE: ";
+
+    //Bank
+    static int guthaben = 1000;
+    static String guthabenText = "BANK: ";
+
+    //Hitbox
+    static boolean kollidiert = false, verloren = false;
+    static boolean eingesammelt = false;
 
     //Images
     static BufferedImage ib1, ib2, ib3, prinz, igegner1, igegner2, iCoin;

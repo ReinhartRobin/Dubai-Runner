@@ -15,5 +15,7 @@ public class Main {
         new EnemyMovement();
         new CoinMovement();
         new SpriteAnimation();
+        new GegnerKollision();
+        new CoinKollision();
     }
 }

@@ -3,10 +3,14 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 
+import static java.lang.Math.round;
+
 public class Label extends JLabel {
 
     protected void paintComponent(Graphics g) {
 
+        String temp = "" + (Math.round(Var.score/10));
+        String temp2 = "" + Var.guthaben;
         super.paintComponent(g);
 
         Graphics2D g2d = (Graphics2D) g;
@@ -21,7 +25,18 @@ public class Label extends JLabel {
 
         //Score
         g.setFont(Var.scoreFont);
-        g.drawString(Var.scoreText + Math.round(Var.score / 10), 20, 50);
+        g.drawString(Var.scoreText, 20, 50);
+        g.drawString(temp, 20, 100);
+
+        //Bank
+        g.drawString(Var.guthabenText, Var.screenWidth-100, 50);
+        if (Var.guthaben > 999){
+            g.drawString(temp2, Var.screenWidth-100, 100);
+        }else if (Var.guthaben > 99 && Var.guthaben < 1000){
+            g.drawString(temp2, Var.screenWidth-80, 100);
+        }else{
+            g.drawString(temp2, Var.screenWidth-40, 100);
+        }
 
 
 
