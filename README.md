@@ -95,3 +95,10 @@
 | 01.05.2020 |    20:00 - 00:00 |slide fixing and optimize code and adding enemies |4h|
 | 02.05.2020 |    10:15 - 12:45 |fixing enemies and adding coins | 2h 30min|
 | 02.05.2020 |   13:15 -  14:00|enemy hitboxes |45min|
+
+## TO-DO-List
+* Start-Screen
+* End-Screen
+* Item-Functions
+* Music
+* Sound-Effects
