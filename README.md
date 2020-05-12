@@ -9,6 +9,10 @@
 
 [logo]: https://raw.githubusercontent.com/reini-java/Dubai-Runner/master/skizze1.jpg "very minimal sketch"
 
+| Language        |       IDEA           |
+| ------------- |:----------------:|
+| Java    | IntelliJ    |
+
 ## Items
 ##### There are some items:
 | Items        |       abilities           |
@@ -80,6 +84,7 @@
 
 
 
+
 | Date        |       time           | Subject               |   Period of Time         |
 | ------------- |:----------------:|:-----------------------:|:-------------------:|
 | 28.04.2020   |  15:50 - 17:30   | Planing and finding theme|   1h 40min
@@ -89,3 +94,4 @@
 | 01.05.2020 |    9:00 -  13:40|Fixing jumping animation and creating slide animation|4h 40min    |
 | 01.05.2020 |    20:00 - 00:00 |slide fixing and optimize code and adding enemies |4h|
 | 02.05.2020 |    10:15 - 12:45 |fixing enemies and adding coins | 2h 30min|
+| 02.05.2020 |   13:15 -  14:00|enemy hitboxes |45min|
