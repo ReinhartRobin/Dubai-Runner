@@ -14,6 +14,8 @@ public class Var {
     static JFrame jf1;
     static int screenWidth = 1600, screenHeight = 900;
     static int backgroundX1 = 0, backgroundX2 = 1600, backgroundX3 = -1600, backgroundSpeed = 8;
+    static boolean ready = false;
+    static boolean start = true;
 
     //Player
     static int px = 500, py = 640;
@@ -49,7 +51,7 @@ public class Var {
     static boolean eingesammelt = false;
 
     //Images
-    static BufferedImage ib1, ib2, ib3, prinz, igegner1, igegner2, iCoin;
+    static BufferedImage ib1, ib2, ib3, ib4, ib5, prinz, igegner1, igegner2, iCoin;
     static String[] imageArray = {
             "rsc/sprite/stand.png",
             "rsc/sprite/1.png",
@@ -86,6 +88,7 @@ public class Var {
 
     //Score
     static Font scoreFont = new Font("Agency FB", Font.BOLD, 40);
+    static Font scoreFont2 = new Font("Agency FB", Font.BOLD, 50);
 
 
     //Label
@@ -103,6 +106,8 @@ public class Var {
             ib1 = ImageIO.read(new File("rsc/b1.jpg"));
             ib2 = ImageIO.read(new File("rsc/b1.jpg"));
             ib3 = ImageIO.read(new File("rsc/b1.jpg"));
+            ib4 = ImageIO.read(new File("rsc/death.jpg"));
+            ib5 = ImageIO.read(new File("rsc/start.jpg"));
             //Player
             prinz = ImageIO.read(new File("rsc/sprite/stand.png"));
             //Gegner

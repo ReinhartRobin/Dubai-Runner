@@ -26,14 +26,12 @@ public class GegnerKollision {
                             }
 
                             if (Var.guthaben > 0) {
-                                Var.verloren = false;
+
                                 if (i != 5) {
                                     Var.guthaben -= 100;
                                 } else {
                                     Var.guthaben -= 1000;
                                 }
-                            } else if (Var.guthaben <= 0) {
-                                Var.verloren = true;
                             }
 
                             temp++;

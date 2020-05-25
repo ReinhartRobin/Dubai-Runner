@@ -14,17 +14,27 @@ public class LabelCoin extends JLabel {
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
+if (!Var.start){
+    if (Var.guthaben <= 0){
 
+    }else{
         //Coins
         for (int i = 0; i < 5; i++) {
             g.drawImage(Var.iCoin, Var.coinsX[i], Var.coinsY[i], 43, 56, null);
         }
+    }
+    repaint();
+}else{
+
+}
 
 
 
 
 
 
-        repaint();
+
+
+
     }
 }

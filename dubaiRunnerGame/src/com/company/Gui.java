@@ -2,6 +2,8 @@ package com.company;
 
 
 import javax.swing.*;
+import java.awt.*;
+import java.sql.SQLOutput;
 
 public class Gui {
 
@@ -18,6 +20,11 @@ public class Gui {
         Var.jf1.addKeyListener(new KeyHandler());
         Var.jf1.requestFocus();
         Var.jf1.setVisible(true);
+
+
+
+
+
 
         //Player
         Var.lblMarcus = new LabelSprite();
@@ -42,6 +49,8 @@ public class Gui {
         Var.lbl1.setBounds(0, 0, Var.screenWidth, Var.screenHeight);
         Var.lbl1.setVisible(true);
         Var.jf1.add(Var.lbl1);
+
+
     }
 
 }
