@@ -20,6 +20,8 @@ public class Label extends JLabel {
             g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
 
+
+            
         if (!Var.start) {
 
             if (Var.guthaben <= 0){
