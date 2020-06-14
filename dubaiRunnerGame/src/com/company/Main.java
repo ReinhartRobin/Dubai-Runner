@@ -10,6 +10,7 @@ public class Main {
         new Label();
         new LabelSprite();
         new LabelEnemy();
+        new LabelItems();
         new Background();
         new PlayerMovement();
         new EnemyMovement();
@@ -17,5 +18,7 @@ public class Main {
         new SpriteAnimation();
         new GegnerKollision();
         new CoinKollision();
+        new ItemsKollision();
+        new ItemsMovement();
     }
 }

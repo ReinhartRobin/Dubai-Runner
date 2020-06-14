@@ -60,6 +60,10 @@ public class Label extends JLabel {
 
         }else{
             g.drawImage(Var.ib5, 0, 0, 1600, 900, null);
+            g.setColor(Color.white);
+            g.setFont(Var.scoreFont2);
+            g.drawString("Press 'SPACE' to start the Game", (Var.screenWidth/2)-280, Var.screenHeight-260);
+
             repaint();
         }
 

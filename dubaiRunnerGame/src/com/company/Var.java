@@ -50,8 +50,13 @@ public class Var {
     static boolean kollidiert = false, verloren = false;
     static boolean eingesammelt = false;
 
+    //Shoe
+    static int shoeSpeed = 3;
+    static int shoeX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);
+    static int shoeY = (int) (Math.random() * ((750) - 600) + 600);
+
     //Images
-    static BufferedImage ib1, ib2, ib3, ib4, ib5, prinz, igegner1, igegner2, iCoin;
+    static BufferedImage ib1, ib2, ib3, ib4, ib5, prinz, igegner1, igegner2, iCoin, iShoe;
     static String[] imageArray = {
             "rsc/sprite/stand.png",
             "rsc/sprite/1.png",
@@ -96,6 +101,7 @@ public class Var {
     static LabelSprite lblMarcus;
     static LabelEnemy lblEnemy;
     static LabelCoin lblCoin;
+    static LabelItems lblItems;
 
 
     //Methode
@@ -115,6 +121,8 @@ public class Var {
             igegner2 = ImageIO.read(new File("rsc/gegner2.png"));
             //Coins
             iCoin = ImageIO.read(new File("rsc/coin.png"));
+            //Items
+            iShoe = ImageIO.read(new File("rsc/items/speedBoost.png"));
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Bilder konnten nicht geladen werden.");

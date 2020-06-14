@@ -32,6 +32,12 @@ public class Gui {
         Var.lblMarcus.setVisible(true);
         Var.jf1.add(Var.lblMarcus);
 
+        //Item
+        Var.lblItems = new LabelItems();
+        Var.lblItems.setBounds(0, 0, Var.screenWidth, Var.screenHeight);
+        Var.lblItems.setVisible(true);
+        Var.jf1.add(Var.lblItems);
+
         //Enemy
         Var.lblEnemy = new LabelEnemy();
         Var.lblEnemy.setBounds(0, 0, Var.screenWidth, Var.screenHeight);
