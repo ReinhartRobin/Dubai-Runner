@@ -49,7 +49,6 @@ public class ItemsMovement {
                     Var.shoeX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);
                     Var.shoeY = (Var.screenHeight / 2);
                 } else {
-                    //Var.shoeY = (int)(100 * Math.sin(Var.shoeX)) + 600;
                     Var.shoeY = (int) ((Var.screenHeight / 2 - 75) * Math.sin(Var.itemCnt)) + (Var.screenHeight / 2 - 75);
                     if (Var.itemCnt >= 2 * 3.14) {
                         Var.itemCnt = 0;
