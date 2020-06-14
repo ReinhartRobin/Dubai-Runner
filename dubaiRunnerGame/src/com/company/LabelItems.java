@@ -18,9 +18,7 @@ public class LabelItems extends JLabel {
 
             } else {
                 //Shoe
-                for (int i = 0; i < 1; i++) {
-                    g.drawImage(Var.iShoe, Var.shoeX, Var.shoeY, 75, 75, null);
-                }
+                g.drawImage(Var.iShoe, Var.shoeX, Var.shoeY, 75, 75, null);
             }
             repaint();
         }else {

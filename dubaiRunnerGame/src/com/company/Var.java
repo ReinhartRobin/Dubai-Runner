@@ -53,7 +53,7 @@ public class Var {
     //Shoe
     static int shoeSpeed = 3;
     static int shoeX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);
-    static int shoeY = (int) (Math.random() * ((750) - 600) + 600);
+    static int shoeY = (Var.screenHeight / 2);
 
     //Images
     static BufferedImage ib1, ib2, ib3, ib4, ib5, prinz, igegner1, igegner2, iCoin, iShoe;
@@ -103,6 +103,8 @@ public class Var {
     static LabelCoin lblCoin;
     static LabelItems lblItems;
 
+    //Items
+    static double itemCnt = 0;
 
     //Methode
     public Var() {
