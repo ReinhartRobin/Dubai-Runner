@@ -32,8 +32,6 @@ public class PlayerMovement {
                             Var.jumpcnt += 0.4;
                         }
                     }
-
-
                     Var.score++;
                 }
                 // BEWEGUNG NACH LINKS

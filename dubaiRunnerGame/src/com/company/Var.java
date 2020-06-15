@@ -46,17 +46,28 @@ public class Var {
     static int guthaben = 1000;
     static String guthabenText = "BANK: ";
 
+
     //Hitbox
     static boolean kollidiert = false, verloren = false;
     static boolean eingesammelt = false;
 
     //Shoe
     static int shoeSpeed = 3;
-    static int shoeX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);
+    static int shoeX = Var.screenWidth + (int) (Math.random() * (6000 - 4500) + 4500);
     static int shoeY = (Var.screenHeight / 2);
 
+    //Watch
+    static int watchSpeed = 3;
+    static int watchX = Var.screenWidth + (int) (Math.random() * (4000 - 3500) + 3500);
+    static int watchY = (Var.screenHeight / 2);
+
+    //Safe
+    static int safeSpeed = 3;
+    static int safeX = (int) (Math.random() * ((Var.screenWidth - 300) - 300) + 300);
+    static int safeY = (int)(Math.random() * ((-100 - 200) - 200)) - 2000;
+
     //Images
-    static BufferedImage ib1, ib2, ib3, ib4, ib5, prinz, igegner1, igegner2, iCoin, iShoe;
+    static BufferedImage ib1, ib2, ib3, ib4, ib5, prinz, igegner1, igegner2, iCoin, iShoe, iWatch, iSafe;
     static String[] imageArray = {
             "rsc/sprite/stand.png",
             "rsc/sprite/1.png",
@@ -125,6 +136,8 @@ public class Var {
             iCoin = ImageIO.read(new File("rsc/coin.png"));
             //Items
             iShoe = ImageIO.read(new File("rsc/items/speedBoost.png"));
+            iWatch = ImageIO.read(new File("rsc/items/clearEnemies.png"));
+            iSafe = ImageIO.read(new File("rsc/items/doubleMoney.png"));
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Bilder konnten nicht geladen werden.");

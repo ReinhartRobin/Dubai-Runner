@@ -43,7 +43,6 @@ public class ItemsMovement {
         movement.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-                Var.blick = true;
                 Var.shoeX -= Var.shoeSpeed;
                 if (Var.shoeX < 0) {
                     Var.shoeX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);
@@ -55,6 +54,28 @@ public class ItemsMovement {
                     } else {
                         Var.itemCnt += 0.01;
                     }
+                }
+
+
+
+                Var.watchX -= Var.watchSpeed;
+                if (Var.watchX < 0) {
+                    Var.watchX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);
+                    Var.watchY = (Var.screenHeight / 2);
+                } else {
+                    Var.watchY = (int) ((Var.screenHeight / 2 - 75) * Math.sin(Var.itemCnt)) + (Var.screenHeight / 2 - 75);
+                    if (Var.itemCnt >= 2 * 3.14) {
+                        Var.itemCnt = 0;
+                    } else {
+                        Var.itemCnt += 0.01;
+                    }
+                }
+
+
+                Var.safeY += Var.safeSpeed;
+                if (Var.safeY >= Var.screenHeight) {
+                    Var.safeY = -3000;
+                    Var.safeX = (int) (Math.random() * ((Var.screenWidth - 300) - 300) + 300);
                 }
 
             }

@@ -23,8 +23,45 @@ public class ItemsKollision {
                         Var.kollidiert = true;
                         temp++;
                         cnt++;
+                    } else if ((Var.px < Var.watchX + 75 && Var.px > Var.watchX || Var.px + 95 > Var.watchX && Var.px + 95 < Var.watchX + 75) && (Var.py > Var.watchY && Var.py < Var.watchY + 75 || Var.py + 145 > Var.watchY && Var.py + 145 < Var.watchY + 75) || (Var.py + 72 > Var.watchY && Var.py + 72 < Var.watchY + 75) && (Var.px < Var.watchX + 75 && Var.px > Var.watchX || Var.px + 95 > Var.watchX && Var.px + 95 < Var.watchX + 75)) {
+                        Var.watchX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);
+                        Var.watchY = (Var.screenHeight / 2);
+                        for (int i = 0; i < Var.gegnerX.length; i++) {
+                            if (i < 3) {
+                                Var.gegnerX[i] = Var.screenWidth + (int) (Math.random() * (100 - 1) + 1);
+                            } else if (i == 3 || i == 4) {
+                                Var.gegnerX[i] = -75 - (int) (Math.random() * (100 - 1) + 1);
+                            } else {
+                                Var.gegnerX[i] = -4000 - (int) (Math.random() * (100 - 1) + 1);
+                            }
+                            Var.kollidiert = true;
+                            temp++;
+                            cnt++;
+                        }
+                    } else if ((Var.px < Var.safeX + 43 && Var.px > Var.safeX || Var.px + 95 > Var.safeX && Var.px + 95 < Var.safeX + 43) && (Var.py > Var.safeY && Var.py < Var.safeY + 56 || Var.py + 145 > Var.safeY && Var.py + 145 < Var.safeY + 56) || (Var.py + 72 > Var.safeY && Var.py + 72 < Var.safeY + 56) && (Var.px < Var.safeX + 43 && Var.px > Var.safeX || Var.px + 95 > Var.safeX && Var.px + 95 < Var.safeX + 43)) {
+                        Var.eingesammelt = true;
+
+
+                        Var.safeX = (int) (Math.random() * ((Var.screenWidth - 300) - 300) + 300);
+                        Var.safeY = -3000;
+
+
+                        if (Var.guthaben > 0) {
+                            Var.verloren = false;
+                            Var.guthaben += 300;
+                        } else if (Var.guthaben <= 0) {
+                            Var.verloren = true;
+                        }
+
+                        temp++;
+
+
+                        Var.kollidiert = true;
+                        temp++;
+                        cnt++;
                     }
                 }
+
 
                 if (temp >= 1 && temp <= 65) {
                     temp++;
