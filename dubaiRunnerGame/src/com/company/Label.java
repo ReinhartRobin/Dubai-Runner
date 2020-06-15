@@ -33,11 +33,21 @@ public class Label extends JLabel {
 
 
 
-            }else{
+            }else {
                 //Background
-                g.drawImage(Var.ib1, Var.backgroundX1, 0, Var.screenWidth, Var.screenHeight, null);
-                g.drawImage(Var.ib2, Var.backgroundX2, 0, Var.screenWidth, Var.screenHeight, null);
-                g.drawImage(Var.ib3, Var.backgroundX3, 0, Var.screenWidth, Var.screenHeight, null);
+                if (Math.round(Var.score/10) < 75){
+                    g.drawImage(Var.ib3, Var.backgroundX1, 0, Var.screenWidth, Var.screenHeight, null);
+                    g.drawImage(Var.ib3, Var.backgroundX2, 0, Var.screenWidth, Var.screenHeight, null);
+                    g.drawImage(Var.ib3, Var.backgroundX3, 0, Var.screenWidth, Var.screenHeight, null);
+                }else if(Math.round(Var.score/10) >= 75 && Math.round(Var.score/10) < 200 ) {
+                    g.drawImage(Var.ib2, Var.backgroundX1, 0, Var.screenWidth, Var.screenHeight, null);
+                    g.drawImage(Var.ib2, Var.backgroundX2, 0, Var.screenWidth, Var.screenHeight, null);
+                    g.drawImage(Var.ib2, Var.backgroundX3, 0, Var.screenWidth, Var.screenHeight, null);
+                }else{
+                    g.drawImage(Var.ib1, Var.backgroundX1, 0, Var.screenWidth, Var.screenHeight, null);
+                    g.drawImage(Var.ib1, Var.backgroundX2, 0, Var.screenWidth, Var.screenHeight, null);
+                    g.drawImage(Var.ib1, Var.backgroundX3, 0, Var.screenWidth, Var.screenHeight, null);
+                }
 
                 //Score
                 g.setFont(Var.scoreFont);

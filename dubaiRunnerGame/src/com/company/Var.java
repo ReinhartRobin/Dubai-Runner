@@ -123,8 +123,8 @@ public class Var {
         try {
             //Background
             ib1 = ImageIO.read(new File("rsc/b1.jpg"));
-            ib2 = ImageIO.read(new File("rsc/b1.jpg"));
-            ib3 = ImageIO.read(new File("rsc/b1.jpg"));
+            ib2 = ImageIO.read(new File("rsc/b2.jpg"));
+            ib3 = ImageIO.read(new File("rsc/b3.jpg"));
             ib4 = ImageIO.read(new File("rsc/death.jpg"));
             ib5 = ImageIO.read(new File("rsc/start.jpg"));
             //Player
