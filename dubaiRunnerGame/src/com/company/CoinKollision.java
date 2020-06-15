@@ -18,13 +18,13 @@ public class CoinKollision {
 
                         if ((Var.px < Var.coinsX[i] + 43 && Var.px > Var.coinsX[i] || Var.px + 95 > Var.coinsX[i] && Var.px + 95 < Var.coinsX[i] + 43) && (Var.py > Var.coinsY[i] && Var.py < Var.coinsY[i] + 56 || Var.py + 145 > Var.coinsY[i] && Var.py + 145 < Var.coinsY[i] + 56) || (Var.py + 72 > Var.coinsY[i] && Var.py + 72 < Var.coinsY[i] + 56) && (Var.px < Var.coinsX[i] + 43 && Var.px > Var.coinsX[i] || Var.px + 95 > Var.coinsX[i] && Var.px + 95 < Var.coinsX[i] + 43)) {
                             Var.eingesammelt = true;
-                                Var.coinsX[i] = (int) (Math.random() * ((Var.screenWidth - 100) - 100) + 100);
-                                Var.coinsY[i] = -100;
-                                Musik.sounds("rsc/audio/enemy.wav");
+                            Var.coinsX[i] = (int) (Math.random() * ((Var.screenWidth - 100) - 100) + 100);
+                            Var.coinsY[i] = -100;
+                            Musik.sounds("rsc/audio/enemy.wav");
 
                             if (Var.guthaben > 0) {
                                 Var.verloren = false;
-                                Var.guthaben+=50;
+                                Var.guthaben += 50;
                             } else if (Var.guthaben <= 0) {
                                 Var.verloren = true;
                             }

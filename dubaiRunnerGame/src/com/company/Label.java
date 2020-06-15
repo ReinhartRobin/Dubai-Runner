@@ -10,19 +10,18 @@ public class Label extends JLabel {
     protected void paintComponent(Graphics g) {
 
 
+        String temp = "" + (Math.round(Var.score / 10));
+        String temp2 = "" + Var.guthaben;
+        super.paintComponent(g);
 
-            String temp = "" + (Math.round(Var.score/10));
-            String temp2 = "" + Var.guthaben;
-            super.paintComponent(g);
+        Graphics2D g2d = (Graphics2D) g;
 
-            Graphics2D g2d = (Graphics2D) g;
-
-            g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
 
         if (!Var.start) {
 
-            if (Var.guthaben <= 0){
+            if (Var.guthaben <= 0) {
                 Var.right = false;
                 Var.left = false;
                 g.drawImage(Var.ib4, 0, 0, 1600, 900, null);
@@ -33,19 +32,17 @@ public class Label extends JLabel {
                 Var.music = false;
 
 
-
-
-            }else {
+            } else {
                 //Background
-                if (Math.round(Var.score/10) < 75){
+                if (Math.round(Var.score / 10) < 75) {
                     g.drawImage(Var.ib3, Var.backgroundX1, 0, Var.screenWidth, Var.screenHeight, null);
                     g.drawImage(Var.ib3, Var.backgroundX2, 0, Var.screenWidth, Var.screenHeight, null);
                     g.drawImage(Var.ib3, Var.backgroundX3, 0, Var.screenWidth, Var.screenHeight, null);
-                }else if(Math.round(Var.score/10) >= 75 && Math.round(Var.score/10) < 200 ) {
+                } else if (Math.round(Var.score / 10) >= 75 && Math.round(Var.score / 10) < 200) {
                     g.drawImage(Var.ib2, Var.backgroundX1, 0, Var.screenWidth, Var.screenHeight, null);
                     g.drawImage(Var.ib2, Var.backgroundX2, 0, Var.screenWidth, Var.screenHeight, null);
                     g.drawImage(Var.ib2, Var.backgroundX3, 0, Var.screenWidth, Var.screenHeight, null);
-                }else{
+                } else {
                     g.drawImage(Var.ib1, Var.backgroundX1, 0, Var.screenWidth, Var.screenHeight, null);
                     g.drawImage(Var.ib1, Var.backgroundX2, 0, Var.screenWidth, Var.screenHeight, null);
                     g.drawImage(Var.ib1, Var.backgroundX3, 0, Var.screenWidth, Var.screenHeight, null);
@@ -57,24 +54,24 @@ public class Label extends JLabel {
                 g.drawString(temp, 20, 100);
 
                 //Bank
-                g.drawString(Var.guthabenText, Var.screenWidth-100, 50);
-                if (Var.guthaben > 999){
-                    g.drawString(temp2, Var.screenWidth-100, 100);
-                }else if (Var.guthaben > 99 && Var.guthaben < 1000){
-                    g.drawString(temp2, Var.screenWidth-80, 100);
-                }else{
-                    g.drawString(temp2, Var.screenWidth-40, 100);
+                g.drawString(Var.guthabenText, Var.screenWidth - 100, 50);
+                if (Var.guthaben > 999) {
+                    g.drawString(temp2, Var.screenWidth - 100, 100);
+                } else if (Var.guthaben > 99 && Var.guthaben < 1000) {
+                    g.drawString(temp2, Var.screenWidth - 80, 100);
+                } else {
+                    g.drawString(temp2, Var.screenWidth - 40, 100);
                 }
             }
 
 
             repaint();
 
-        }else{
+        } else {
             g.drawImage(Var.ib5, 0, 0, 1600, 900, null);
             g.setColor(Color.white);
             g.setFont(Var.scoreFont2);
-            g.drawString("Press 'SPACE' to start the Game", (Var.screenWidth/2)-280, Var.screenHeight-260);
+            g.drawString("Press 'SPACE' to start the Game", (Var.screenWidth / 2) - 280, Var.screenHeight - 260);
 
             repaint();
         }

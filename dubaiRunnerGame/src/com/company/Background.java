@@ -12,9 +12,9 @@ public class Background {
             @Override
             public void run() {
 
-                if (Var.score <= 200){
+                if (Var.score <= 200) {
 
-                }else if (Var.score > 200){
+                } else if (Var.score > 200) {
                     //Rechts-Laufen => Bild geht nach links
                     if (Var.right && Var.px > 1200) {
                         if (Var.backgroundX1 > -1596) {

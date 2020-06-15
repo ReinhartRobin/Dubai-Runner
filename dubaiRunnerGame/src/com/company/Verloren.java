@@ -82,10 +82,10 @@ public class Verloren {
 
                         }
                         temp = 0;
-                        if(Var.score >= 50){
+                        if (Var.score >= 50) {
                             Var.score -= 50;
-                        }else{
-                            Var.score =  0;
+                        } else {
+                            Var.score = 0;
                         }
 
                     }

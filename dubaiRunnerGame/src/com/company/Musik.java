@@ -30,15 +30,15 @@ public class Musik {
             @Override
             public void run() {
 
-                    try {
-                        Clip clip = AudioSystem.getClip();
-                        AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File(track));
-                        clip.open(inputStream);
-                        clip.start();
-                        Thread.sleep(clip.getMicrosecondLength());
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                try {
+                    Clip clip = AudioSystem.getClip();
+                    AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File(track));
+                    clip.open(inputStream);
+                    clip.start();
+                    Thread.sleep(clip.getMicrosecondLength());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
             }
         }).start();

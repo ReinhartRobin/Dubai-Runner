@@ -65,7 +65,7 @@ public class Var {
     //Safe
     static int safeSpeed = 3;
     static int safeX = (int) (Math.random() * ((Var.screenWidth - 300) - 300) + 300);
-    static int safeY = (int)(Math.random() * ((-100 - 200) - 200)) - 2000;
+    static int safeY = (int) (Math.random() * ((-100 - 200) - 200)) - 2000;
 
     //Images
     static BufferedImage ib1, ib2, ib3, ib4, ib5, prinz, igegner1, igegner2, iCoin, iShoe, iWatch, iSafe;

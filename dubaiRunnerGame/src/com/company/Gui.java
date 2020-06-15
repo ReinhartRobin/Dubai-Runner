@@ -22,10 +22,6 @@ public class Gui {
         Var.jf1.setVisible(true);
 
 
-
-
-
-
         //Player
         Var.lblMarcus = new LabelSprite();
         Var.lblMarcus.setBounds(0, 0, Var.screenWidth, Var.screenHeight);

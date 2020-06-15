@@ -20,12 +20,12 @@ public class LabelItems extends JLabel {
                 //Shoe
                 g.drawImage(Var.iShoe, Var.shoeX, Var.shoeY, 75, 75, null);
                 //Watch
-                g.drawImage(Var.iWatch, Var.watchX, Var.watchY, (int)(500*0.4), (int)(281*0.4), null);
+                g.drawImage(Var.iWatch, Var.watchX, Var.watchY, (int) (500 * 0.4), (int) (281 * 0.4), null);
                 //Safe
                 g.drawImage(Var.iSafe, Var.safeX, Var.safeY, 90, 90, null);
             }
             repaint();
-        }else {
+        } else {
         }
     }
 }

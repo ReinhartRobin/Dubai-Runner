@@ -57,7 +57,6 @@ public class ItemsMovement {
                 }
 
 
-
                 Var.watchX -= Var.watchSpeed;
                 if (Var.watchX < 0) {
                     Var.watchX = Var.screenWidth + (int) (Math.random() * (5000 - 4500) + 4500);

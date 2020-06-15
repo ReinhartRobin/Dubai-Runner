@@ -16,10 +16,10 @@ public class LabelSprite extends JLabel {
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-        if (!Var.start){
-            if (Var.guthaben <= 0){
+        if (!Var.start) {
+            if (Var.guthaben <= 0) {
 
-            }else{
+            } else {
                 //Rechts-Laufen
                 if (Var.right && !Var.jump && !Var.down) {
                     Var.check = true;
@@ -153,15 +153,12 @@ public class LabelSprite extends JLabel {
                     }
 
 
-
                 }
             }
             repaint();
-        }else{
+        } else {
 
         }
-
-
 
 
     }
