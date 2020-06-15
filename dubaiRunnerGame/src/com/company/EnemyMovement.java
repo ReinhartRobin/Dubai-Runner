@@ -20,7 +20,7 @@ public class EnemyMovement {
         Var.gegnerX[2] = Var.screenWidth + (int) (Math.random() * (100 - 1) + 1);
         Var.gegnerY[2] = (int) (Math.random() * ((299) - 0) + 0);
 
-
+        //links
         Var.gegnerX[3] = -75 - (int) (Math.random() * (100 - 1) + 1);
         Var.gegnerY[3] = (int) (Math.random() * ((750) - 600) + 600);
         Var.gegnerX[4] = -75 - (int) (Math.random() * (100 - 1) + 1);
@@ -28,14 +28,12 @@ public class EnemyMovement {
         Var.gegnerX[5] = -4000 - (int) (Math.random() * (100 - 1) + 1);
         Var.gegnerY[5] = (int) (Math.random() * ((Var.ground) - 0) + 0);
 
-
+        //Gegner "respawn"
         if (!check && (Var.score / 10) > 500 && (Var.score / 10) <= 1000) {
             for (int i = 0; i < 6; i++) {
                 Var.gegnerSpeed[i]++;
             }
             this.check = true;
-
-
         }
 
         if (check && (Var.score / 10) > 1000 && (Var.score / 10) <= 1500) {
@@ -43,8 +41,6 @@ public class EnemyMovement {
                 Var.gegnerSpeed[i]++;
             }
             this.check = false;
-
-
         }
 
         if (!check && (Var.score / 10) > 1500 && (Var.score / 10) <= 2000) {
@@ -52,8 +48,6 @@ public class EnemyMovement {
                 Var.gegnerSpeed[i]++;
             }
             this.check = true;
-
-
         }
 
         if (check && (Var.score / 10) > 2000) {
@@ -61,17 +55,12 @@ public class EnemyMovement {
                 Var.gegnerSpeed[i]++;
             }
             this.check = false;
-
-
         }
-
 
         movement = new Timer();
         movement.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
-
-
                 for (int i = 0; i < 3; i++) {
                     Var.blick = true;
                     Var.gegnerX[i] -= Var.gegnerSpeed[i];
@@ -87,8 +76,6 @@ public class EnemyMovement {
                             Var.gegnerX[i] = Var.screenWidth + (int) (Math.random() * (100 - 1) + 1);
                             Var.gegnerY[i] = (int) (Math.random() * ((299) - 0) + 0);
                         }
-
-
                     }
                 }
 
@@ -109,7 +96,5 @@ public class EnemyMovement {
                 }
             }
         }, 0, 9);
-
-
     }
 }

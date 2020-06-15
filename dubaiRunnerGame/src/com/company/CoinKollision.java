@@ -12,10 +12,9 @@ public class CoinKollision {
         movement.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
+                //Überprüft in jedem Frame ob
                 for (int i = 0; i < 5; i++) {
                     if (temp == 0 && Var.music) {
-
-
                         if ((Var.px < Var.coinsX[i] + 43 && Var.px > Var.coinsX[i] || Var.px + 95 > Var.coinsX[i] && Var.px + 95 < Var.coinsX[i] + 43) && (Var.py > Var.coinsY[i] && Var.py < Var.coinsY[i] + 56 || Var.py + 145 > Var.coinsY[i] && Var.py + 145 < Var.coinsY[i] + 56) || (Var.py + 72 > Var.coinsY[i] && Var.py + 72 < Var.coinsY[i] + 56) && (Var.px < Var.coinsX[i] + 43 && Var.px > Var.coinsX[i] || Var.px + 95 > Var.coinsX[i] && Var.px + 95 < Var.coinsX[i] + 43)) {
                             Var.eingesammelt = true;
                             Var.coinsX[i] = (int) (Math.random() * ((Var.screenWidth - 100) - 100) + 100);
@@ -30,7 +29,6 @@ public class CoinKollision {
                             }
 
                             temp++;
-
                         }
                     }
                 }
