@@ -16,6 +16,7 @@ public class Var {
     static int backgroundX1 = 0, backgroundX2 = 1600, backgroundX3 = -1600, backgroundSpeed = 8;
     static boolean ready = false;
     static boolean start = true;
+    static boolean music = false;
 
     //Player
     static int px = 500, py = 640;
@@ -156,6 +157,8 @@ public class Var {
         coinSpeed[2] = 3;
         coinSpeed[3] = 3;
         coinSpeed[4] = 4;
+
+        Musik.music("rsc/audio/background.wav");
 
     }
 

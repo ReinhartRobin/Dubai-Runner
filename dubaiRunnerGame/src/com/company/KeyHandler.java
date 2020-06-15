@@ -33,7 +33,7 @@ public class KeyHandler implements KeyListener {
             Var.watchX = Var.screenWidth + (int) (Math.random() * (4000 - 3500) + 3500);
             Var.watchY = (Var.screenHeight / 2);
             Var.safeX = (int) (Math.random() * ((Var.screenWidth - 300) - 300) + 300);
-            Var.safeY = (int)(Math.random() * ((-100 - 200) - 200)) - 2000;
+            Var.safeY = (int) (Math.random() * ((-100 - 200) - 200)) - 2000;
             Var.score = 0;
             Var.guthaben = 1000;
             Var.px = 500;
@@ -52,7 +52,7 @@ public class KeyHandler implements KeyListener {
                 Var.coinsX[i] = (int) (Math.random() * ((Var.screenWidth - 100) - 100) + 100);
             }
             Var.ready = false;
-
+            Var.music = true;
 
         }
         if (e.getKeyCode() == KeyEvent.VK_SPACE && Var.start) {
@@ -66,7 +66,7 @@ public class KeyHandler implements KeyListener {
             Var.watchX = Var.screenWidth + (int) (Math.random() * (4000 - 3500) + 3500);
             Var.watchY = (Var.screenHeight / 2);
             Var.safeX = (int) (Math.random() * ((Var.screenWidth - 300) - 300) + 300);
-            Var.safeY = (int)(Math.random() * ((-100 - 200) - 200)) - 2000;
+            Var.safeY = (int) (Math.random() * ((-100 - 200) - 200)) - 2000;
             for (int i = 0; i < Var.gegnerX.length; i++) {
                 if (i < 3) {
                     Var.gegnerX[i] = Var.screenWidth + (int) (Math.random() * (100 - 1) + 1);
@@ -81,6 +81,7 @@ public class KeyHandler implements KeyListener {
                 Var.coinsX[i] = (int) (Math.random() * ((Var.screenWidth - 100) - 100) + 100);
             }
             Var.start = false;
+            Var.music = true;
 
 
         }
@@ -101,12 +102,13 @@ public class KeyHandler implements KeyListener {
             Var.down = true;
         }
         if (e.getKeyCode() == KeyEvent.VK_ENTER && Var.guthaben <= 0 && Var.ready) {
+
             Var.shoeX = Var.screenWidth + (int) (Math.random() * (6000 - 4500) + 4500);
             Var.shoeY = (Var.screenHeight / 2);
             Var.watchX = Var.screenWidth + (int) (Math.random() * (4000 - 3500) + 3500);
             Var.watchY = (Var.screenHeight / 2);
             Var.safeX = (int) (Math.random() * ((Var.screenWidth - 300) - 300) + 300);
-            Var.safeY = (int)(Math.random() * ((-100 - 200) - 200)) - 2000;
+            Var.safeY = (int) (Math.random() * ((-100 - 200) - 200)) - 2000;
             Var.score = 0;
             Var.guthaben = 1000;
             Var.px = 500;
@@ -126,6 +128,7 @@ public class KeyHandler implements KeyListener {
                 Var.coinsX[i] = (int) (Math.random() * ((Var.screenWidth - 100) - 100) + 100);
             }
             Var.ready = false;
+            Var.music = true;
 
 
         }

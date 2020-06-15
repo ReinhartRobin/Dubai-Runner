@@ -30,6 +30,8 @@ public class Label extends JLabel {
                 g.setColor(Color.black);
                 g.drawString("You scored " + temp, 300, 700);
                 Var.ready = true;
+                Var.music = false;
+
 
 
 
