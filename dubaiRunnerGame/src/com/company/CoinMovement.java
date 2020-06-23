@@ -3,6 +3,11 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Bewegt alle Coins von oben nach unten.
+ * Setzt die Position der Coins zurück, wenn sie außerhalb des Spielfeldes sind.
+ */
+
 public class CoinMovement {
     Timer movement;
     private int temp = 0;
@@ -26,8 +31,6 @@ public class CoinMovement {
                     }
                 }
             }
-
-
         }, 0, 9);
     }
 }

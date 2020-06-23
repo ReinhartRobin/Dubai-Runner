@@ -1,9 +1,12 @@
 package com.company;
 
-
 import javax.swing.*;
 import java.awt.*;
 import java.sql.SQLOutput;
+
+/**
+ * Läd Texturen in das Spiel.
+ */
 
 public class Gui {
 

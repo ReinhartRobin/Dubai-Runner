@@ -3,13 +3,16 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Überprüft ob die Position des Spielers über der der Gegner liegt und lässt den Spieler dies einsemmeln, wobei die
+ * Position der Gegner zurückgesetzt wird und das Guthaben des Spielers erniedrigt wird.
+ */
+
 public class GegnerKollision {
     Timer kollision;
     private int temp = 0;
 
     public GegnerKollision() {
-
-
         kollision = new Timer();
         kollision.scheduleAtFixedRate(new TimerTask() {
             @Override

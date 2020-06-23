@@ -5,6 +5,11 @@ import java.awt.*;
 
 import static java.lang.Math.round;
 
+/**
+ * Ändert den Hintergrund bei bestimmten Scores. Gibt den Score und das Guthaben auf dem Screen aus.
+ * Zeichnet den Hintergrund.
+ */
+
 public class Label extends JLabel {
 
     protected void paintComponent(Graphics g) {

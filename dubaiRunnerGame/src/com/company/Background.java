@@ -3,6 +3,12 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Wenn die X-Koordinarte 1200/400 beträgt, bewegt sich der Hintergrund nach links/rechts um die Bewegung
+ * zu simulieren.
+ *
+ */
+
 public class Background {
     Timer back;
 

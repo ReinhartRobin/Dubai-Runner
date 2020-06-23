@@ -6,6 +6,10 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Lädt die Sprite-Animation
+ */
+
 public class LabelSprite extends JLabel {
 
     protected void paintComponent(Graphics g) {

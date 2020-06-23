@@ -3,6 +3,11 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Überprüft ob die Position des Spielers über der der Items liegt und lässt den Spieler dies einsemmeln, wobei die
+ * Position der Items zurückgesetzt wird und der Spieler einen Effekt erhält.
+ */
+
 public class ItemsKollision {
     Timer kollision;
     private int temp = 0;

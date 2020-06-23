@@ -8,6 +8,10 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Verändert die X bzw. Y-Koordinate des Spielers.
+ */
+
 public class PlayerMovement {
     Timer movement, jumpTimer;
     int cnt = 0;

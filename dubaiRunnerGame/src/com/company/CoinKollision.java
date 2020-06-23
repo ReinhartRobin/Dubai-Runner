@@ -3,6 +3,11 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Überprüft ob die Position des Spielers über der der Coins liegt und lässt den Spieler dies einsemmeln, wobei die
+ * Position der Coins zurückgesetzt wird und das Guthaben des Spielers erhöht wird.
+ */
+
 public class CoinKollision {
     Timer movement;
     private int temp = 0;

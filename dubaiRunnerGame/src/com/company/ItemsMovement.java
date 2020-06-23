@@ -5,6 +5,10 @@ import jdk.nashorn.internal.ir.CallNode;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Bewegt die Items von rechts nach links und bewegt sie durch eine sin-Schwingung von oben nach unten.
+ */
+
 public class ItemsMovement {
     Timer movement, position;
     private int temp = 0;

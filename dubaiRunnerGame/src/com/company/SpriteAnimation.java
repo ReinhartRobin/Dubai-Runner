@@ -3,6 +3,10 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Animiert den Sprite.
+ */
+
 public class SpriteAnimation {
     Timer sprite, jumpTime, slideTime;
     private int temp1 = 1;

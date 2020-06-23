@@ -3,15 +3,17 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * "Spawnt" Gegner und bewegt sie von links nach rechts bzw. rechts nach links.
+ * Setzt die Position der Gegner zurück, wenn sie außerhalb des Spielfeldes sind.
+ */
+
 public class EnemyMovement {
     Timer movement, position;
     private int temp = 0;
     private boolean check = false;
 
-
     public EnemyMovement() {
-
-
         //rechts
         Var.gegnerX[0] = Var.screenWidth + (int) (Math.random() * (100 - 1) + 1);
         Var.gegnerY[0] = (int) (Math.random() * ((750) - 600) + 600);
@@ -28,7 +30,6 @@ public class EnemyMovement {
         Var.gegnerX[5] = -4000 - (int) (Math.random() * (100 - 1) + 1);
         Var.gegnerY[5] = (int) (Math.random() * ((Var.ground) - 0) + 0);
 
-        //Gegner "respawn"
         if (!check && (Var.score / 10) > 500 && (Var.score / 10) <= 1000) {
             for (int i = 0; i < 6; i++) {
                 Var.gegnerSpeed[i]++;

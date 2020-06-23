@@ -4,6 +4,10 @@ package com.company;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+/**
+ * Wertet Tastatureingaben aus
+ */
+
 public class KeyHandler implements KeyListener {
 
     @Override

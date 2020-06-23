@@ -3,6 +3,10 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * Zeichnet die Münzen.
+ */
+
 public class LabelCoin extends JLabel {
 
     protected void paintComponent(Graphics g) {

@@ -3,6 +3,11 @@ package com.company;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * Wenn das Guthaben 0 ist, setzt die Klasse alle Items, Gegner usw. zurück und lädt den Deathscreen.
+ * Das Spiel wird im Keyhandler neugestartet.
+ */
+
 public class Verloren {
     Timer loose;
     private int temp = 0, temp1 = 0, temp2 = 0;

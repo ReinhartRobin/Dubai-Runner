@@ -1,5 +1,9 @@
 package com.company;
 
+/**
+ * Ruft alle Klassen auf.
+ */
+
 public class Main {
 
     public static void main(String[] args) {
