@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company</OriginalElement>
+  <nodes>
+    <node x="1472.0" y="2023.0">com.company.ItemsMovement</node>
+    <node x="480.0" y="11.0">com.company.LabelItems</node>
+    <node x="1160.0" y="2034.0">com.company.PlayerMovement</node>
+    <node x="2341.0" y="2034.0">com.company.ItemsKollision</node>
+    <node x="1434.75" y="11.0">com.company.LabelEnemy</node>
+    <node x="1832.0" y="2056.0">com.company.Background</node>
+    <node x="423.5484420392827" y="2276.0">com.company.Gui</node>
+    <node x="1079.311262552103" y="2440.0">com.company.Main</node>
+    <node x="821.0" y="2045.0">com.company.CoinMovement</node>
+    <node x="0.0" y="11.0">com.company.LabelSprite</node>
+    <node x="986.0" y="2023.0">com.company.EnemyMovement</node>
+    <node x="240.0" y="11.0">com.company.Label</node>
+    <node x="2171.6548645320195" y="0.0">com.company.Musik</node>
+    <node x="1302.5" y="286.0">com.company.Var</node>
+    <node x="1340.0" y="2023.0">com.company.Verloren</node>
+    <node x="1194.75" y="11.0">com.company.LabelCoin</node>
+    <node x="1980.0" y="2045.0">com.company.GegnerKollision</node>
+    <node x="2168.0" y="2045.0">com.company.CoinKollision</node>
+    <node x="1644.0" y="2012.0">com.company.SpriteAnimation</node>
+    <node x="606.0" y="2055.0">com.company.KeyHandler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.company.Var" target="com.company.LabelSprite">
+      <point x="-85.0" y="-818.0" />
+      <point x="1311.0" y="166.0" />
+      <point x="137.5" y="166.0" />
+      <point x="27.5" y="27.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.EnemyMovement">
+      <point x="-4.65625" y="-27.0" />
+      <point x="1149.155012552103" y="2350.0" />
+      <point x="1063.0" y="2350.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.company.Label" target="com.company.Var">
+      <point x="82.5" y="27.0" />
+      <point x="432.5" y="136.0" />
+      <point x="1362.0" y="136.0" />
+      <point x="-34.0" y="-818.0" />
+    </edge>
+    <edge source="com.company.Var" target="com.company.LabelItems">
+      <point x="-17.0" y="-818.0" />
+      <point x="1379.0" y="126.0" />
+      <point x="617.5" y="126.0" />
+      <point x="27.5" y="27.0" />
+    </edge>
+    <edge source="com.company.LabelCoin" target="com.company.Var">
+      <point x="73.33333333333326" y="27.0" />
+      <point x="1378.0833333333333" y="96.0" />
+      <point x="1430.0" y="96.0" />
+      <point x="34.0" y="-818.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.CoinMovement">
+      <point x="-23.28125" y="-27.0" />
+      <point x="1130.530012552103" y="2370.0" />
+      <point x="893.0" y="2370.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.LabelItems">
+      <point x="-51.21875" y="-27.0" />
+      <point x="1102.592512552103" y="2400.0" />
+      <point x="132.12068373436944" y="2400.0" />
+      <point x="132.12068373436944" y="196.0" />
+      <point x="507.5" y="196.0" />
+      <point x="-82.5" y="27.0" />
+    </edge>
+    <edge source="com.company.Background" target="com.company.Var">
+      <point x="0.0" y="-48.0" />
+      <point x="1896.0" y="1972.0" />
+      <point x="1439.1538461538462" y="1972.0" />
+      <point x="43.15384615384619" y="818.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Gui">
+      <point x="-41.90625" y="-27.0" />
+      <point x="1111.905012552103" y="2390.0" />
+      <point x="462.5484420392827" y="2390.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.SpriteAnimation">
+      <point x="23.28125" y="-27.0" />
+      <point x="1177.092512552103" y="2370.0" />
+      <point x="1728.0" y="2370.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="com.company.Gui" target="com.company.Label">
+      <point x="-22.28571428571422" y="-27.0" />
+      <point x="440.26272775356847" y="2246.0" />
+      <point x="322.5" y="2246.0" />
+      <point x="-27.5" y="27.0" />
+    </edge>
+    <edge source="com.company.LabelEnemy" target="com.company.Var">
+      <point x="27.5" y="27.0" />
+      <point x="1572.25" y="246.0" />
+      <point x="1464.0" y="246.0" />
+      <point x="68.0" y="-818.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.GegnerKollision">
+      <point x="41.90625" y="-27.0" />
+      <point x="1195.717512552103" y="2390.0" />
+      <point x="2064.0" y="2390.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.company.Var" target="com.company.LabelEnemy">
+      <point x="51.0" y="-818.0" />
+      <point x="1447.0" y="236.0" />
+      <point x="1517.25" y="236.0" />
+      <point x="-27.5" y="27.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.ItemsMovement">
+      <point x="13.96875" y="-27.0" />
+      <point x="1167.780012552103" y="2360.0" />
+      <point x="1548.0" y="2360.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.company.SpriteAnimation" target="com.company.Var">
+      <point x="0.0" y="-92.0" />
+      <point x="1728.0" y="1982.0" />
+      <point x="1424.7692307692307" y="1982.0" />
+      <point x="28.769230769230717" y="818.0" />
+    </edge>
+    <edge source="com.company.Gui" target="com.company.KeyHandler">
+      <point x="33.428571428571445" y="-27.0" />
+      <point x="495.97701346785414" y="2256.0" />
+      <point x="654.75" y="2256.0" />
+      <point x="-48.75" y="49.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.LabelEnemy">
+      <point x="60.53125" y="-27.0" />
+      <point x="1214.342512552103" y="2410.0" />
+      <point x="2330.5" y="2410.0" />
+      <point x="2330.5" y="246.0" />
+      <point x="1627.25" y="246.0" />
+      <point x="82.5" y="27.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Var">
+      <point x="-13.96875" y="-27.0" />
+      <point x="1139.842512552103" y="2360.0" />
+      <point x="975.5" y="2360.0" />
+      <point x="975.5" y="1972.0" />
+      <point x="1352.8461538461538" y="1972.0" />
+      <point x="-43.15384615384619" y="818.0" />
+    </edge>
+    <edge source="com.company.Var" target="com.company.Label">
+      <point x="-51.0" y="-818.0" />
+      <point x="1345.0" y="146.0" />
+      <point x="377.5" y="146.0" />
+      <point x="27.5" y="27.0" />
+    </edge>
+    <edge source="com.company.Gui" target="com.company.LabelItems">
+      <point x="-11.14285714285711" y="-27.0" />
+      <point x="451.4055848964256" y="2216.0" />
+      <point x="490.10952302008343" y="2216.0" />
+      <point x="490.10952302008343" y="206.0" />
+      <point x="562.5" y="206.0" />
+      <point x="-27.5" y="27.0" />
+    </edge>
+    <edge source="com.company.LabelItems" target="com.company.Var">
+      <point x="82.5" y="27.0" />
+      <point x="672.5" y="116.0" />
+      <point x="1396.0" y="116.0" />
+      <point x="0.0" y="-818.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.ItemsKollision">
+      <point x="69.84375" y="-27.0" />
+      <point x="1223.655012552103" y="2420.0" />
+      <point x="2421.0" y="2420.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Background">
+      <point x="32.59375" y="-27.0" />
+      <point x="1186.405012552103" y="2380.0" />
+      <point x="1896.0" y="2380.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="com.company.KeyHandler" target="com.company.Var">
+      <point x="0.0" y="-49.0" />
+      <point x="703.5" y="1952.0" />
+      <point x="1324.076923076923" y="1952.0" />
+      <point x="-71.9230769230769" y="818.0" />
+    </edge>
+    <edge source="com.company.GegnerKollision" target="com.company.Var">
+      <point x="-42.0" y="-59.0" />
+      <point x="2022.0" y="1962.0" />
+      <point x="1453.5384615384617" y="1962.0" />
+      <point x="57.53846153846166" y="818.0" />
+    </edge>
+    <edge source="com.company.Gui" target="com.company.LabelEnemy">
+      <point x="11.14285714285711" y="-27.0" />
+      <point x="473.6912991821398" y="2236.0" />
+      <point x="584.5" y="2236.0" />
+      <point x="584.5" y="226.0" />
+      <point x="1462.25" y="226.0" />
+      <point x="-82.5" y="27.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.Label">
+      <point x="-60.53125" y="-27.0" />
+      <point x="1093.280012552103" y="2410.0" />
+      <point x="59.65178571428578" y="2410.0" />
+      <point x="59.65178571428578" y="186.0" />
+      <point x="267.5" y="186.0" />
+      <point x="-82.5" y="27.0" />
+    </edge>
+    <edge source="com.company.ItemsMovement" target="com.company.Var">
+      <point x="0.0" y="-81.0" />
+      <point x="1548.0" y="1992.0" />
+      <point x="1410.3846153846155" y="1992.0" />
+      <point x="14.384615384615472" y="818.0" />
+    </edge>
+    <edge source="com.company.Verloren" target="com.company.Var">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="818.0" />
+    </edge>
+    <edge source="com.company.Var" target="com.company.Musik">
+      <point x="85.0" y="-818.0" />
+      <point x="1481.0" y="256.0" />
+      <point x="2190.6548645320195" y="256.0" />
+      <point x="-57.0" y="38.0" />
+    </edge>
+    <edge source="com.company.GegnerKollision" target="com.company.Musik">
+      <point x="42.0" y="-59.0" />
+      <point x="2106.0" y="266.0" />
+      <point x="2228.6548645320195" y="266.0" />
+      <point x="-19.0" y="38.0" />
+    </edge>
+    <edge source="com.company.ItemsKollision" target="com.company.Musik">
+      <point x="40.0" y="-70.0" />
+      <point x="2461.0" y="236.0" />
+      <point x="2304.6548645320195" y="236.0" />
+      <point x="57.0" y="38.0" />
+    </edge>
+    <edge source="com.company.ItemsKollision" target="com.company.Var">
+      <point x="-40.0" y="-70.0" />
+      <point x="2381.0" y="1942.0" />
+      <point x="1482.3076923076924" y="1942.0" />
+      <point x="86.30769230769238" y="818.0" />
+    </edge>
+    <edge source="com.company.CoinKollision" target="com.company.Var">
+      <point x="-38.0" y="-59.0" />
+      <point x="2206.0" y="1952.0" />
+      <point x="1467.923076923077" y="1952.0" />
+      <point x="71.9230769230769" y="818.0" />
+    </edge>
+    <edge source="com.company.PlayerMovement" target="com.company.Var">
+      <point x="0.0" y="-70.0" />
+      <point x="1240.0" y="1992.0" />
+      <point x="1381.6153846153845" y="1992.0" />
+      <point x="-14.384615384615472" y="818.0" />
+    </edge>
+    <edge source="com.company.Gui" target="com.company.Var">
+      <point x="22.28571428571422" y="-27.0" />
+      <point x="484.8341563249969" y="2246.0" />
+      <point x="595.5" y="2246.0" />
+      <point x="595.5" y="1942.0" />
+      <point x="1309.6923076923076" y="1942.0" />
+      <point x="-86.30769230769238" y="818.0" />
+    </edge>
+    <edge source="com.company.EnemyMovement" target="com.company.Var">
+      <point x="0.0" y="-81.0" />
+      <point x="1063.0" y="1982.0" />
+      <point x="1367.2307692307693" y="1982.0" />
+      <point x="-28.769230769230717" y="818.0" />
+    </edge>
+    <edge source="com.company.LabelSprite" target="com.company.Var">
+      <point x="82.5" y="27.0" />
+      <point x="192.5" y="156.0" />
+      <point x="1328.0" y="156.0" />
+      <point x="-68.0" y="-818.0" />
+    </edge>
+    <edge source="com.company.Gui" target="com.company.LabelCoin">
+      <point x="0.0" y="-27.0" />
+      <point x="462.5484420392827" y="2226.0" />
+      <point x="513.892044019199" y="2226.0" />
+      <point x="513.892044019199" y="216.0" />
+      <point x="1231.4166666666667" y="216.0" />
+      <point x="-73.33333333333326" y="27.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.LabelSprite">
+      <point x="-69.84375" y="-27.0" />
+      <point x="1083.967512552103" y="2420.0" />
+      <point x="50.33928571428578" y="2420.0" />
+      <point x="50.33928571428578" y="266.0" />
+      <point x="27.5" y="266.0" />
+      <point x="-82.5" y="27.0" />
+    </edge>
+    <edge source="com.company.CoinKollision" target="com.company.Musik">
+      <point x="38.0" y="-59.0" />
+      <point x="2282.0" y="266.0" />
+      <point x="2266.6548645320195" y="266.0" />
+      <point x="19.0" y="38.0" />
+    </edge>
+    <edge source="com.company.Var" target="com.company.LabelCoin">
+      <point x="17.0" y="-818.0" />
+      <point x="1413.0" y="106.0" />
+      <point x="1304.75" y="106.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.company.Gui" target="com.company.LabelSprite">
+      <point x="-33.428571428571445" y="-27.0" />
+      <point x="429.11987061071125" y="2256.0" />
+      <point x="145.65639802008377" y="2256.0" />
+      <point x="145.65639802008377" y="176.0" />
+      <point x="82.5" y="176.0" />
+      <point x="-27.5" y="27.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.CoinKollision">
+      <point x="51.21875" y="-27.0" />
+      <point x="1205.030012552103" y="2400.0" />
+      <point x="2244.0" y="2400.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.PlayerMovement">
+      <point x="4.65625" y="-27.0" />
+      <point x="1158.467512552103" y="2350.0" />
+      <point x="1240.0" y="2350.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+    <edge source="com.company.Main" target="com.company.KeyHandler">
+      <point x="-32.59375" y="-27.0" />
+      <point x="1121.217512552103" y="2380.0" />
+      <point x="752.25" y="2380.0" />
+      <point x="48.75" y="49.0" />
+    </edge>
+    <edge source="com.company.CoinMovement" target="com.company.Var">
+      <point x="0.0" y="-59.0" />
+      <point x="893.0" y="1962.0" />
+      <point x="1338.4615384615386" y="1962.0" />
+      <point x="-57.53846153846143" y="818.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.22911694510739863" x="2046.3689120979911" y="1552.6165735545428" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
