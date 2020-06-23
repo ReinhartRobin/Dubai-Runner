@@ -38,7 +38,9 @@ public class PlayerMovement {
                 else if (Var.left && !Var.down) {
 
                     if (Var.px > 100) {
-                        Var.px -= Var.speed;
+                        if (Var.score > 0) {
+                            Var.px -= Var.slidecnt;
+                        }
                     }
 
                     if (Var.jump) {
@@ -51,8 +53,10 @@ public class PlayerMovement {
                         }
                     }
 
+if (Var.score > 0){
+    Var.score--;
+}
 
-                    Var.score--;
                     // SPRUNG WÄHREND DES STILL STEHENS
                 } else if (Var.jump) {
                     Var.py = (int) Math.round(200 + 0.5 * (Math.pow(Var.jumpcnt, 2)));
@@ -93,12 +97,19 @@ public class PlayerMovement {
 
                         } else {
                             if (Var.px > 100) {
-                                Var.px -= Var.slidecnt;
+                                if (Var.score > 0) {
+                                    Var.px -= Var.slidecnt;
+                                }
                             }
                             cnt += Var.slidecnt;
 
                         }
-                        Var.score--;
+                        if (Var.score > 0){
+                            Var.score--;
+                        }
+
+
+
                     }
                 }
             }
